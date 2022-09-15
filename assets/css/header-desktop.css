@@ -1,0 +1,5 @@
+@media (min-width: 320px) {
+.header__desktop {
+    display: none;
+}
+}

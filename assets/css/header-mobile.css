@@ -1,0 +1,16 @@
+.hamburguer__icon {
+    width: 30px;
+}
+.hamburguer__content {
+    display: none;
+}
+
+.header__logo {
+    width: 40%;
+}
+.header__mobile {
+    background-color: #3ebfff;
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 5%;
+}

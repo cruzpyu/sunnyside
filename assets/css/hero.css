@@ -1,0 +1,27 @@
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  width: 100vw;
+  background-image: url(../images/mobile/image-header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__arrow {
+  height: 100px;
+  width: 10%;
+}
+
+.hero__title {
+  position: relative;
+  bottom: 10%;
+  font-family: "fraunces", serif;
+  text-transform: uppercase;
+  color: #fff;
+  width: 70%;
+  text-align: center;
+}

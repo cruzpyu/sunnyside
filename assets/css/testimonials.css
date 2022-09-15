@@ -1,0 +1,43 @@
+.testimonials {
+    padding: 6% 1%;
+    display: flex;
+  text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.testimonials h2 {
+    font-family: "fraunces", serif;
+      font-size: 1.2em;
+      margin: 5% auto 10%;
+      text-align: center;
+      color:   hsl(232, 10%, 55%);
+      font-weight: bolder;
+      text-transform: uppercase;
+}
+.testimonials h2, .card__name {
+    font-family: "fraunces", serif;
+
+}
+.card__name {
+    color: hsl(213, 9%, 39%);
+    margin-top: 3%;
+}
+.card__text, .card__job {
+    font-family: "barlow", sans-serif;
+}
+.card__text {
+    color: hsl(232, 10%, 55%);
+    line-height: 1.6em;
+    font-size: .8em;
+    padding: 2% 8%;
+}
+.card__job {
+    color:  hsl(210, 4%, 67%);
+}
+.testimonials__card {
+    margin-bottom: 20%;
+}
+.card__image {
+    width: 140px;
+    border-radius: 50%;
+}

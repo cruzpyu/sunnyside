@@ -1,0 +1,42 @@
+.stand {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.stand__content {
+  padding: 10% 2%;
+  margin: 10% auto;
+}
+.tstand__image {
+  width: 100%;
+}
+.stand h2 {
+  font-family: "fraunces", serif;
+  width: 80%;
+  margin: 0 auto 4%;
+  text-align: center;
+  color: hsl(212, 27%, 19%);
+  font-weight: bolder;
+}
+.stand p {
+  font-family: "barlow", sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  color: hsl(232, 10%, 55%);
+  line-height: 1.6em;
+  font-size: 1em;
+}
+.stand__link a {
+  text-transform: uppercase;
+  font-family: "fraunces", serif;
+  border-radius: 2px;
+  border-bottom: 6px solid hsl(7, 99%, 80%);
+  text-decoration: none;
+  color: hsl(212, 27%, 19%);
+}
+.stand__link {
+  margin: 10% auto 2%;
+  text-align: center;
+}

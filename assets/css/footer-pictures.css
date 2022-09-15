@@ -1,0 +1,11 @@
+.footer__pictures {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.footer__pictures img {
+    width: 50%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
