@@ -1,16 +1,72 @@
 .hamburguer__icon {
     width: 30px;
 }
+
 .hamburguer__content {
+    top: 15vh;
+    position: absolute;
+    z-index: 2;
+    right: 3vh;
+    background-color: #ffffff;
+    width: 90%;
+    min-width: 200px;
+    height: 300px; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "barlow", sans-serif;
+    color: hsl(232, 10%, 55%);
     display: none;
 }
 
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.showModal {
+    display: flex;
+}
+.showModal.hamburguer__content {
+    animation: modal .3s;
+}
 .header__logo {
     width: 40%;
 }
+
 .header__mobile {
     background-color: #3ebfff;
     display: flex;
     justify-content: space-between;
     padding: 4% 5%;
+}
+
+.hamburguer__content__list {
+    text-align: center;
+}
+
+.hamburguer__item {
+    list-style: none;
+    margin: 40% auto;
+}
+
+.hamburguer__item:last-child {
+    margin-bottom: 0;
+}
+
+.hamburguer__button {
+    height: 50px;
+    width: 40%;
+    border-radius: 40px;
+    background-color: hsl(51, 100%, 49%);
+    font-family: "fraunces", serif;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: hsl(212, 27%, 19%);
 }
