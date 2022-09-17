@@ -19,9 +19,6 @@
 .hamburguer__icon {  
     width: 30px;
 }
-.showModal {
-    display: flex;
-}
 .hamburguer__content {
     align-items: center;
     background-color: #ffffff;
@@ -39,6 +36,9 @@
     z-index: 2;
 }
 
+.showModal {
+    display: flex;
+}
 .showModal.hamburguer__content {
     animation: modal .3s;
 }
