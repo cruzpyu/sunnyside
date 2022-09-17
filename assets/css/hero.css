@@ -14,6 +14,7 @@
 .hero__arrow {
   height: 100px;
   width: 10%;
+  animation: movingArrow ease-in-out 1.3s infinite;
 }
 
 .hero__title {
@@ -24,4 +25,33 @@
   color: #fff;
   width: 70%;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  .hero {
+    width: 100%;
+    background-image: url("../images/desktop/image-header.jpg");
+  }
+  .hero__arrow {
+    width: 2%;
+    position: relative;
+    bottom: 2%;
+  }
+  .hero__title {
+    bottom: 15%;
+    font-size: 2.5em;
+  }
+}
+
+@keyframes movingArrow {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
 }

@@ -1,0 +1,62 @@
+.more-features {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.more-features--photography {
+  background-image: url("../images/mobile/image-photography.jpg");
+}
+.more-features--design {
+  background-image: url("../images/mobile/image-graphic-design.jpg");
+}
+.more-features__content {
+  position: relative;
+  top: 60%;
+}
+.more-features__content h2 {
+  font-family: "fraunces", serif;
+  font-weight: bolder;
+  margin: 0 auto 4%;
+  text-align: center;
+  width: 80%;
+}
+.more-features__content p {
+  font-family: "barlow", sans-serif;
+  font-size: 0.9em;
+  font-weight: lighter;
+  line-height: 1.6em;
+  padding: 0 1%;
+  text-align: center;
+  width: 100%;
+}
+.more-features--photography h2,
+.more-features--photography p {
+  color: hsl(198, 62%, 26%);
+}
+.more-features--design h2,
+.more-features--design p {
+  color: hsl(167, 40%, 24%);
+}
+
+@media (min-width: 1024px) {
+  .more-features__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .more-features {
+    background-size: cover;
+    height: 600px;
+    margin: 0;
+    top: 0;
+    width: 100%;
+  }
+  .more-features--photography {
+    background-image: url("../images/desktop/image-photography.jpg");
+  }
+  .more-features--design {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+  }
+  .more-features p {
+    padding: 0 20%;
+  }
+}

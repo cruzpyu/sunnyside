@@ -41,3 +41,25 @@
     text-decoration: none;
     color: hsl(167, 40%, 22%);
 }
+
+@media (min-width: 1024px) {
+    .logo__footer {
+        width: 15%;
+    }
+    .footer__nav {
+        width: 30%;
+        cursor: pointer;
+    }
+    .footer__link:hover, .attribution a:hover {
+color: rgba(255, 255, 255, 0.789);
+transition: all ease .5s;
+    }
+    .social__links {
+        width: 30%;
+        cursor: pointer;
+    }
+    .footer {
+        justify-content: space-between;
+        padding: 5% 0;
+    }
+}

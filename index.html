@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -16,16 +15,14 @@
     <link rel="stylesheet" href="./assets/css/header-desktop.css" />
     <link rel="stylesheet" href="./assets/css/header-mobile.css" />
     <link rel="stylesheet" href="./assets/css/hero.css" />
-    <link rel="stylesheet" href="./assets/css/transform.css" />
-    <link rel="stylesheet" href="./assets/css/stand.css" />
-    <link rel="stylesheet" href="./assets/css/design.css" />
-    <link rel="stylesheet" href="./assets/css/photography.css" />
+    <link rel="stylesheet" href="./assets/css/features.css" />
+    <link rel="stylesheet" href="./assets/css/more-features.css" />
     <link rel="stylesheet" href="./assets/css/testimonials.css" />
-    <link rel="stylesheet" href="./assets/css/footer-pictures.css" />
+    <link rel="stylesheet" href="./assets/css/gallery.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
-    <script src="assets/script.js"defer></script>
+    <script src="assets/js/script.js" defer></script>
 
-        <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
 
   <body>
@@ -33,14 +30,14 @@
       <img
         src="./assets/images/logo.svg"
         alt="Sunnyside's logo, which is the word Sunnyside in a white, sans-serif font"
-        class="header__logo"
+        class="header-desktop__logo"
       />
       <nav class="header__nav">
         <ul class="nav__list">
           <li class="nav__list__items">About</li>
           <li class="nav__list__items">Services</li>
           <li class="nav__list__items">Projects</li>
-          <li class="nav__list__items">Contact</li>
+          <button class="nav__button">Contact</button>
         </ul>
       </nav>
     </header>
@@ -49,7 +46,7 @@
       <img
         src="./assets/images/logo.svg"
         alt="Sunnyside's logo, which is the word Sunnyside in a white, sans-serif font"
-        class="header__logo"
+        class="header-mobile__logo"
       />
       <img
         src="./assets/images/icon-hamburger.svg"
@@ -73,56 +70,56 @@
         class="hero__arrow"
       />
     </section>
-    <section class="transform">
-      <img
-        src="./assets/images/mobile/image-transform.jpg"
-        alt=""
-        class="transform__image"
-      />
-      <div class="transform__content">
+    <section class="features">
+      <div class="features__image features__image--transform"></div>
+      <div class="features__content">
         <h2>Transform your brand</h2>
         <p>
           We are a full-service creative agency specializing in helping brands
           grow fast. Engage your clients through compelling visuals that do most
           of the marketing for you.
         </p>
-        <div class="transform__link"><a href="#"> Learn more </a></div>
+        <div class="features__link features__link--transform">
+          <a href="#"> Learn more </a>
+        </div>
       </div>
     </section>
-    <section class="stand">
-      <img
-        src="./assets/images/mobile/image-stand-out.jpg"
-        alt=""
-        class="stand__image"
-      />
-      <div class="stand__content">
+    <section class="features">
+      <div class="features__image features__image--stand"></div>
+      <div class="features__content">
         <h2>Stand out to the right audience</h2>
         <p>
           Using a collaborative formula of designers, researchers,
           photographers, videographers, and copywriters, we’ll build and extend
           your brand in digital places.
         </p>
-        <div class="stand__link"><a href="#"> Learn more </a></div>
+        <div class="features__link features__link--stand">
+          <a href="#"> Learn more </a>
+        </div>
       </div>
     </section>
-    <section class="design">
-      <div class="design__content">
-        <h2>Graphic design</h2>
-        <p>
-          Great design makes you memorable. We deliver artwork that underscores
-          your brand message and captures potential clients’ attention.
-        </p>
-      </div>
-    </section>
-    <section class="photography">
-      <div class="photography__content">
-        <h2>Photography</h2>
-        <p>
-          Increase your credibility by getting the most stunning, high-quality
-          photos that improve your business image.
-        </p>
-      </div>
-    </section>
+    <div class="more-features__container">
+      <section class="more-features more-features--design">
+        <div class="more-features__content">
+          <h2>Graphic design</h2>
+          <p>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+      </section>
+      <section class="more-features more-features--photography">
+        <div class="more-features__content">
+          <h2>Photography</h2>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </section>
+    </div>
+
     <section class="testimonials">
       <h2 class="testimonials__title">Client Testimonials</h2>
       <div class="testimonials__cards">
@@ -167,28 +164,12 @@
         </div>
       </div>
     </section>
-    <section class="footer__pictures">
-      <img
-        src="./assets/images/mobile/image-gallery-milkbottles.jpg"
-        alt=""
-        class="footer__picture"
-      />
-      <img
-        src="./assets/images/mobile/image-gallery-orange.jpg"
-        alt=""
-        class="footer__picture"
-      />
-      <img
-        src="./assets/images/mobile/image-gallery-cone.jpg"
-        alt=""
-        class="footer__picture"
-      />
-      <img
-        src="./assets/images/mobile/image-gallery-sugar-cubes.jpg"
-        alt=""
-        class="footer__picture"
-      />
-    </section>
+    <ul class="footer__pictures">
+      <li class="footer__pictures--picture picture-1"></li>
+      <li class="footer__pictures--picture picture-2"></li>
+      <li class="footer__pictures--picture picture-3"></li>
+      <li class="footer__pictures--picture picture-4"></li>
+    </ul>
     <footer class="footer">
       <img src="./assets/images/logo-footer.svg" alt="" class="logo__footer" />
       <nav class="footer__nav">
@@ -228,7 +209,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Yullie</a>.
+        >. Coded by <a href="https://www.linkedin.com/in/yullie/">Yullie</a>.
       </div>
     </footer>
   </body>

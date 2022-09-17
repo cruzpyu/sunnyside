@@ -1,5 +1,49 @@
 @media (min-width: 320px) {
-.header__desktop {
-    display: none;
+    .header__desktop {
+        display: none;
+    }
 }
+@media (min-width: 1024px) {
+    .header__desktop {
+        display: flex;
+        background-color: #3ebfff;
+        justify-content: space-between;
+        font-family: "barlow", sans-serif;
+        padding: 2% 7%;
+        align-items: center;
+        width: 100%;
+    }
+    .header-desktop__logo {
+        width: 13%;
+        height: 35px;
+    }
+    .nav__list {
+        display: flex;
+        align-items: center;
+    }
+    .nav__list__items {
+        list-style: none;
+        color: #fff;
+        padding-right: 50px;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    .nav__list__items:hover {
+        opacity: 1;
+    }
+    .nav__button {
+        padding: 4% 7%;
+        border-radius: 40px;
+        font-family: "fraunces", serif;
+        text-transform: uppercase;
+        color:  hsl(212, 27%, 19%);
+        font-weight: bolder;
+      
+    }
+   .nav__button:hover {
+    background-color: rgba(255, 255, 255, 0.31);
+    color: #fff;
+    transition: all ease .2s;
+   }
 }
+
