@@ -27,6 +27,7 @@
 }
 .features__link {
   margin: 10% auto 2%;
+  width: 30%;
 }
 .features__link a {
   text-transform: uppercase;
